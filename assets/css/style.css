@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Hero Style Start */
+.hero {
+    background-image: url("../images/hero-bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.hero-cta {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+
+/* HEADER / NAV BAR STYLES START */
+
+header {
+    background-image: url("../images/hero.jpeg");
+    height: 650px;
+    background-size: cover;
+    background-position: center;   
+}
+
+section {
+    padding: 60px;
+    background-image: url("../images/hero.jpeg")
+}
