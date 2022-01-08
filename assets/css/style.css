@@ -4,10 +4,15 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #5F9EA0;
+}
 
 /* Hero Style Start */
 .hero {
-    background-image: url("../images/hero-bg.jpeg");
+    background-image: url("../images/hero.jpeg");
+    height: 300px;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -22,22 +27,125 @@
     width: 35%;
     text-align: right;
     margin: 3.5%;
-    color: #fff;
-    font-size: 18px;
+    color: #F5FFFA;
+    font-size: 15px;
     line-height: 1.2;
+    justify-content: flex-end;
+    background-position: bottom;
+    margin: 0;
 }
 
 
 /* HEADER / NAV BAR STYLES START */
 
 header {
-    background-image: url("../images/hero.jpeg");
-    height: 650px;
+    padding: 20px 35px;
+    background-color: #2F4F4F;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
     background-size: cover;
-    background-position: center;   
+    background-position: center;
 }
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #F0F8FF;
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: #F0F8FF;
+
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight:lighter;
+    font-size: 20px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+header li {
+    border-bottom: 5px solid #778899;
+}
+
+header nav ul li a:hover {
+    background: #F0F8FF;
+    color: #6495ED;
+    border-radius: 10px;
+    text-shadow: none;
+}
+
+/* HEADER / NAV BAR STYLES END */
+
+.section h2 {
+    border-bottom: 5px solid #778899;  
+    align-items: flex-start;
+    justify-content: space-between;  
+    font-size: 40px;
+}
+
+.section p {
+    font-size: 15px;
+    margin: 20px 0;
+}
+
+
 
 section {
     padding: 60px;
-    background-image: url("../images/hero.jpeg")
+}
+
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {   
+       padding-bottom: 0;
+       justify-content: center;
+       position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .hero-cta {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
 }
