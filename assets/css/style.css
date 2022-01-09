@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #5F9EA0;
+    --secondary-color: #778899;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #5F9EA0;
@@ -73,7 +78,7 @@ header nav ul li a {
 }
 
 header li {
-    border-bottom: 5px solid #778899;
+    border-bottom: 5px solid var(--secondary-color);
 }
 
 header nav ul li a:hover {
@@ -82,12 +87,13 @@ header nav ul li a:hover {
     border-radius: 10px;
     text-shadow: none;
 }
+
 /* header / nav bar style end */
 
 
 .flex-row h2 {
     font-size: 25px;
-    border-bottom: 5px solid #778899;
+    border-bottom: 5px solid var(--secondary-color);
     padding: 30px;
     text-align: center;
     width: 50%;
@@ -96,7 +102,6 @@ header nav ul li a:hover {
 
 
 /* about me style start */
-
 .about {
     display: flex;
     line-height: 150%;
@@ -107,7 +112,6 @@ header nav ul li a:hover {
 
 
 /* work section */
-
 .projects {
     margin: 0 auto;
     display: flex;
@@ -120,13 +124,13 @@ header nav ul li a:hover {
 }
 
 .project h3, .project-1 h3{
-    background: #778899;
+    background: var(--secondary-color);
     text-align: center;
     text size: 25px;
 }
 
 .project p, .project-1 p {
-    background: #778899;
+    background: var(--secondary-color);
     text-align: center;
     text size: 15px;
 }
@@ -141,21 +145,34 @@ header nav ul li a:hover {
     height: 250px;
 }
 
-
 /* work section end */
 
 
 
 /* contact info & resume */
-
-
 .personal p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     text size: 15px;
-    padding-bottom: 1em; 
+    padding: 12px 16px; 
 }
+
+.personal a {     
+    display: block;     
+    position: relative;    
+    z-index: 1;     
+    padding: 1em;     
+    margin: -1em; 
+ }
+
+.personal p a:hover {
+    background: #F0F8FF;
+    color: #6495ED;
+    border-radius: 10px;
+    text-shadow: none;
+}
+
 /* contact & resume style end */
 
 
