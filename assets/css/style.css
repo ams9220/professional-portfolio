@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: playfair, raleway, quicksand, lato, open sans, serif;
     background-color: #5F9EA0;
 }
 
@@ -106,6 +106,7 @@ header nav ul li a:hover {
     display: flex;
     line-height: 150%;
     padding: 40px;
+    text size: 15px;
 }
 
 /* about me style end */
@@ -117,6 +118,7 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 40px;
 }
 
 .project-info {
@@ -138,11 +140,13 @@ header nav ul li a:hover {
 .project-1 img {
     width: 800px;
     height: 400px;
+    padding: 25px;
 }
 
 .project img {
     width: 250px;
     height: 250px;
+    padding: 25px;
 }
 
 /* work section end */
@@ -150,6 +154,11 @@ header nav ul li a:hover {
 
 
 /* contact info & resume */
+
+.personal {
+    padding: 40px;
+}
+
 .personal p {
     display: flex;
     flex-wrap: wrap;
@@ -171,6 +180,7 @@ header nav ul li a:hover {
     color: #6495ED;
     border-radius: 10px;
     text-shadow: none;
+    font-weight: bold;
 }
 
 /* contact & resume style end */
@@ -182,8 +192,8 @@ footer {
     width: 100%;
     padding: 20px 35px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+
 }
 
 footer h4 {
@@ -199,12 +209,78 @@ footer h4 {
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
+    header {   
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+     }
+ 
+     header h1 {
+        width: 100%;
+        text-align: center;
+     }
+ 
+     header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+     }
+
+     .hero {
+        width: 100%;
+     }
+
+     .flex-row h2 {
+        justify-content: center;
+     }
+
+    .about {
+        justify-content: center;
+    }
+
+    .projects {
+        justify-content: center;
+    }
+
+    .personal {
+        justify-content: center;
+    }
+
+    .project-1 img {
+        width: 600px;
+        height: 300px;         
+     }
 
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
+    .about, .personal p {
+        text size: 11px;
+    }
 
+    .project-1 img {
+        width: 370px;
+        height: 185px;  
+    }
+
+    .project img {
+        width: 215px;
+        height: 215px;
+    }
+
+    .project h3, .project-1 h3{
+        text size: 18px;
+    }
+    
+    .project p, .project-1 p {
+        text size: 10px;
+    }
+
+    .personal {
+        padding: 20px;
+    }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
