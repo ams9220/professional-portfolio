@@ -9,7 +9,7 @@ body {
     background-color: #5F9EA0;
 }
 
-/* Hero Style Start */
+/* hero style start */
 .hero {
     background-image: url("../images/hero.jpeg");
     height: 300px;
@@ -18,35 +18,25 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
 }
 
-.hero-cta {
-    width: 35%;
-    text-align: right;
-    margin: 3.5%;
-    color: #F5FFFA;
-    font-size: 15px;
-    line-height: 1.2;
-    justify-content: flex-end;
-    background-position: bottom;
-    margin: 0;
-}
+/* hero style end */
 
 
-/* HEADER / NAV BAR STYLES START */
-
+/* header / nav bar style start */
 header {
     padding: 20px 35px;
     background-color: #2F4F4F;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
     top: 0;
     background-size: cover;
     background-position: center;
+    background-position: 80%;
+    z-index: 9999;   
 }
 
 header h1 {
@@ -54,6 +44,7 @@ header h1 {
     font-size: 36px;
     color: #F0F8FF;
     margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
 }
 
 header a {
@@ -91,61 +82,119 @@ header nav ul li a:hover {
     border-radius: 10px;
     text-shadow: none;
 }
+/* header / nav bar style end */
 
-/* HEADER / NAV BAR STYLES END */
 
-.section h2 {
-    border-bottom: 5px solid #778899;  
-    align-items: flex-start;
-    justify-content: space-between;  
-    font-size: 40px;
+.flex-row h2 {
+    font-size: 25px;
+    border-bottom: 5px solid #778899;
+    padding: 30px;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto 35px auto;
 }
 
-.section p {
+
+/* about me style start */
+
+.about {
+    display: flex;
+    line-height: 150%;
+    padding: 40px;
+}
+
+/* about me style end */
+
+
+/* work section */
+
+.projects {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-info {
+    padding: 25px;
+}
+
+.project h3, .project-1 h3{
+    background: #778899;
+    text-align: center;
+    text size: 25px;
+}
+
+.project p, .project-1 p {
+    background: #778899;
+    text-align: center;
+    text size: 15px;
+}
+
+.project-1 img {
+    width: 800px;
+    height: 400px;
+}
+
+.project img {
+    width: 250px;
+    height: 250px;
+}
+
+
+/* work section end */
+
+
+
+/* contact info & resume */
+
+
+.personal p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text size: 15px;
+    padding-bottom: 1em; 
+}
+/* contact & resume style end */
+
+
+
+/* FOOTER STYLES START */
+footer {
+    width: 100%;
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer h4 {
     font-size: 15px;
-    margin: 20px 0;
+    margin: 0;
 }
 
+/* END FOOTER STYLES */
 
 
-section {
-    padding: 60px;
-}
 
 
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
-    header {   
-       padding-bottom: 0;
-       justify-content: center;
-       position: relative;
-    }
 
-    header h1 {
-        width: 100%;
-        text-align: center;
-    }
-
-    header nav ul {
-        margin-top: 20px;
-        width: 100%;
-        justify-content: center;
-    }
-
-    header nav ul li a {
-        font-size: 20px;
-    }
-
-    .hero-cta {
-        width: 100%;
-        text-align: center;
-    }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-    section {
-        padding: 30px 15px;
-    }
+
 }
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+}
+
+
+
+
