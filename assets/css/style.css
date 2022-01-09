@@ -105,7 +105,7 @@ header nav ul li a:hover {
 .about {
     display: flex;
     line-height: 150%;
-    padding: 40px;
+    padding: 10px 315px 20px;
     text size: 15px;
 }
 
@@ -141,12 +141,18 @@ header nav ul li a:hover {
     width: 800px;
     height: 400px;
     padding: 25px;
+    opacity: 0.6;
 }
 
 .project img {
     width: 250px;
     height: 250px;
     padding: 25px;
+    opacity: 0.6;
+}
+
+.project-1 img:hover, .project img:hover {
+    opacity: 1.0;
 }
 
 /* work section end */
@@ -237,6 +243,7 @@ footer h4 {
 
     .about {
         justify-content: center;
+        padding: 40px;
     }
 
     .projects {
