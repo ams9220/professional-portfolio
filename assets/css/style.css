@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+
+/* the header & footer colors were each just used once so they were not included in the root var */
+/* the header color set the color palette, but the primary color was the body background */
 :root {
     --primary-color: #ACB9B9;
     --secondary-color: #778899;
@@ -16,6 +19,7 @@ body {
     font-family: playfair, raleway, quicksand, lato, open sans, serif;
     background-color: var(--primary-color);
 }
+
 
 /* hero style start */
 .hero {
@@ -58,7 +62,6 @@ header h1 {
 header a {
     text-decoration: none;
     color: var(--tertiary-color);
-
 }
 
 header nav {
@@ -94,6 +97,7 @@ header nav ul li a:hover {
 /* header / nav bar style end */
 
 
+/* applies to all section h2 labels */
 .flex-row h2 {
     font-size: 25px;
     border-bottom: 5px solid var(--secondary-color);
@@ -117,7 +121,7 @@ header nav ul li a:hover {
 /* about me style end */
 
 
-/* work section */
+/* work section style start */
 .projects {
     margin: 0 auto;
     display: flex;
@@ -133,7 +137,7 @@ header nav ul li a:hover {
 .project h3, .project-1 h3{
     background: var(--secondary-color);
     text-align: center;
-    text size: 25px;
+    text size: 22px;
 }
 
 .project p, .project-1 p {
@@ -160,12 +164,10 @@ header nav ul li a:hover {
     opacity: 1.0;
 }
 
-/* work section end */
+/* work section sstyle end */
 
 
-
-/* contact info & resume */
-
+/* contact info & resume style start */
 .personal {
     padding: 40px;
 }
@@ -198,8 +200,7 @@ header nav ul li a:hover {
 /* contact & resume style end */
 
 
-
-/* FOOTER STYLES START */
+/* footer styles start */
 footer {
     margin-top: 40px;
     background-color: #586868;
@@ -212,17 +213,18 @@ footer {
 }
 
 footer h4 {
+    color: var(--tertiary-color);
     font-size: 15px;
+    font-weight: lighter;
     margin: 0;
 }
 
 footer div {
+    color: var(--quinary-color);
     text-align: right;
 }
 
-/* END FOOTER STYLES */
-
-
+/* end footer styles */
 
 
 
@@ -270,13 +272,17 @@ footer div {
     .project-1 img {
         width: 600px;
         height: 300px;         
-     }
+    }
 
+    footer h4, footer div {
+        text-align: center;
+        width: 100%;
+    }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-    .about, .personal p {
+    .about, .personal p, footer h4 {
         text size: 11px;
     }
 
