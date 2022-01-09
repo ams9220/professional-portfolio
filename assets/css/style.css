@@ -5,7 +5,7 @@
 }
 
 :root {
-    --primary-color: #5F9EA0;
+    --primary-color: #ACB9B9;
     --secondary-color: #778899;
     --tertiary-color: #F0F8FF;
     --quaternary-color: #6495ED;
@@ -201,9 +201,12 @@ header nav ul li a:hover {
 
 /* FOOTER STYLES START */
 footer {
+    margin-top: 40px;
+    background-color: #586868;
     width: 100%;
     padding: 20px 35px;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 
 }
@@ -211,6 +214,10 @@ footer {
 footer h4 {
     font-size: 15px;
     margin: 0;
+}
+
+footer div {
+    text-align: right;
 }
 
 /* END FOOTER STYLES */
