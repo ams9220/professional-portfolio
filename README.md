@@ -31,9 +31,7 @@ The website follows a responsive layout so the site view will change based on th
 
 ## Credits & License
 
-The following assignment was completed as a Challenge as part of a Coding Boot Camp through the University of Miami.
-
-All images and source code are originals and therefore considered intellectual property.
+The following assignment was completed as a Challenge as part of a Coding Boot Camp through the University of Miami. All images, content, and source code are originals and therefore considered intellectual property.
 
 © 2022 Ana. Confidential and Proprietary. All Rights Reserved.
 
